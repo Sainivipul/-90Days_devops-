@@ -22,7 +22,7 @@ df -H | awk 'NR>1{print $5 " " $1}' | while read output; do
     if [ "$usage" -gt "$alert" ]; then
         echo "CRITICAL DISK ALERT FOUND"
         echo "Proceeding to Autohealing..."
-        echo "Iteration 1 Archiving files larger than 20MB"
+        echo "Attempting First Itration  Archiving files larger than 20MB"
         DAYS=10
         DEPTH=1
         RUN=0
